@@ -1,0 +1,34 @@
+{
+  "basic": [
+    "Exterior Ultra Foam Wash",
+    "Wheel & Tire Cleaning",
+    "Bug Splatter Removal",
+    "Tire Shine Coating",
+    "Glass Cleaning (Windows, Mirrors)",
+    "Interior Vacuuming",
+    "Dashboard & Trim Cleaning",
+    "Pet Hair Removal",
+    "Seat Belt Cleaning",
+    "Basic Paint Correction (Single stage)"
+  ],
+  "essential": [
+    "Everything in Basic Package, plus",
+    "Clay Bar Treatment",
+    "Interior Shampoo",
+    "Interior Trim Polish",
+    "Door Panel & Cupholder Cleaning",
+    "Paint Protection Spray (6-month durability)"
+  ],
+  "premium": [
+    "Everything in Essential Package, plus",
+    "Steam Cleaning (Seats, Carpets, Mats)",
+    "Headliner Spot Cleaning",
+    "Engine Bay Wipe-Down",
+    "Rain Repellent on Glass",
+    "Undercarriage Rinse",
+    "Interior Deodorizer Treatment",
+    "Wheel Detailing",
+    "Trim Restoration",
+    "Advanced Paint Correction (Multi-stage)"
+  ]
+}

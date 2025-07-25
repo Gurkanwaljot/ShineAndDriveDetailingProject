@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+
+.card-service .card-info {
+  height: 450px;
+  overflow-y: hidden;
+  transition: all 1s linear;
+}
+
+.price-table-container::-webkit-scrollbar{
+  display: none;
+}
+.nav-style .nav-item .nav-link{
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 20px !important;
+  color: black !important;
+  margin: 10px;
+}
+.row-head th{
+  background-color: transparent !important;
+  padding:0 !important;
+  border: none !important; 
+}
+.cities-list{
+  display: flex;
+  justify-content: center;
+}
+.cities-list li{
+  font-size: 10px;
+  margin: 10px;
+}
+.btn-package-normal{
+    padding: 15px 40px;
+    display: inline-block;
+    background-color: #ffc107;
+    color: var(--white-color);
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-family: var(--heading-font-family);
+    border: none;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    transform: translate3d(0, 0px, 0px);
+  }
+
+.common-btn{
+      background-color: #7b6115 !important;
+}
+
+.pricing-card.active {
+  background: var(--primary-color) !important;
+}
+.btn-package-premium{
+    padding: 15px 40px;
+    display: inline-block;
+    background-color: var(--white-color);
+    color: black;
+    font-size: 15px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-family: var(--heading-font-family);
+    border: none;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    transform: translate3d(0, 0px, 0px);
+  }
+.btn-package-premium:hover {
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: translate3d(0px, -7px, 0.01px);
+}
+.btn-package-normal:hover {
+    transition: background-color 0.4s, transform 0.3s, color 0.3s;
+    background-color: white;
+    color: var(--black-color);
+    transform: translate3d(0px, -7px, 0.01px);
+}
+.card-review{
+  padding: 50px !important;
+}
+.row-head > th > h4 > .text-bg-heading{
+  background-color: #58151c !important;
+}
+.bg-sec {
+  background-color:#ffc107;
+}
+.footer.style-1 .copy-right {
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-style .nav-item .active{
+background:#ffc107 !important;
+color: white !important;
+border: none !important;
+}
+.site-logo{
+  width: 200px;
+  height: 50px;
+}
+.site-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.t-package{
+  background-color: white;
+  color: black;
+}
+.t-package div{
+border: 1px solid red;
+}
+.pricing-section-bg-img{
+  background-size: cover;
+  background-position: center center;
+}
+.btn-service {
+  background-color: rgba(41, 40, 40, 0.5);
+  color: var(--primary-color);
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  padding: 10px;
+  transition:0.5s all linear;
+  backdrop-filter: blur(30px);
+  border: none;
+}
+.btn-service:hover{
+  background-color: rgba(185, 184, 184, 0.5);
+  color: black;
+  backdrop-filter: blur(30px);
+}
+.table-addons tr td{
+background-color: transparent !important;
+color: var(--primary-color);
+padding: 10px;
+} 
+
+.add-card span{
+  padding: 10px;
+  font-weight: bold;
+}
+.add-card{
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  background: radial-gradient(#7b6115b2,rgba(0, 0, 0, 0.64)) !important;
+  backdrop-filter: blur(90px) !important;
+}
+.btn-animation:hover, .cta .cta-info .cta-btn:hover {
+  font-size: 17px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  background-color: #7b6115 !important;
+  transform: translate3d(0, -8px, 0.01px);
+}
+@font-face {
+  font-family: 'lg';
+  src: url("/node_modules/lightgallery/fonts/lg.woff2?io9a6k") format("woff2"), url("/node_modules/lightgallery/fonts/lg.ttf?io9a6k") format("truetype"), url("/node_modules/lightgallery/fonts/lg.woff?io9a6k") format("woff"), url("/node_modules/lightgallery/fonts/lg.svg?io9a6k#lg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+button{
+  font-family: 'lg';
+}
+.option-all .option .title{
+  font-size: 15px !important;
+}
+.option-all .option .icon img{
+width: 15px;
+}
+.pricing-card{
+margin: 30px 0;
+}
+/* Responsiveness */
+@media (max-width:570px) {
+  .t-package{
+    width: 1180px;
+  }
+  .cities-list{
+    flex-direction: column;
+  }
+  .cities-list li{
+  margin: 3px 0;
+  }
+  .price-table-container{
+  overflow-x: scroll !important;
+}
+.card-review{
+  padding: 50px 20px  !important;
+}
+}
+

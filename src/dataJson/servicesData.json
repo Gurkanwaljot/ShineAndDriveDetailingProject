@@ -1,0 +1,129 @@
+[
+    {
+        "id": 1,
+        "img": "/assets/img/service/Exterior_Ultra_Foam_Wash(service_1_.png",
+        "title": "Exterior Ultra Foam Wash",
+        "desp": "Our Exterior Ultra Foam Wash uses thick foam to loosen and lift dirt, road salt, bugs, and grime before any contact is made with your car’s paint. The vehicle is then hand washed using soft mitts and premium soap to avoid swirl marks or scratches. We finish with a careful microfiber towel dry to protect the paint finish.",
+        "benefits":[
+            "Ensures a scratch-free wash.",
+            "Preserves paint quality.",
+            "Leaves the exterior looking glossy and clean.",
+            "Preps the surface for any follow-up treatments like clay bar or paint protection.",
+            "Helps maintain the vehicle's long-term appearance."
+        ]
+            
+    },
+    {
+        "id": 2,
+        "img": "/assets/img/service/Interior_Vaccuming_Service_2.jpeg",
+        "title": "Interior Vacuming",
+        "desp": "Our team thoroughly vacuums your car’s interior, including under and between seats, floor mats, the trunk, and tight spaces around the pedals and gear shift. We ensure all loose debris, dust, sand, and dirt are removed from high-traffic areas inside your vehicle.",
+        "benefits":[
+            "Improves cabin hygiene.",
+            "Freshens up the interior.",
+            "Enhances the overall driving experience.",
+            "Prevents dust buildup which can damage fabrics",
+            "Improve air quality for passengers."
+        ]
+    },
+    {
+        "id": 3,
+        "img": "/assets/img/service/Dashboard_Trim_Cleaning_Service_3.png",
+        "title": "Dashboard & Trim Cleaning",
+        "desp": "We gently clean your dashboard, center console, air vents, and door panels using high-quality, non-greasy cleaners that restore the original look without attracting dust. We also polish surfaces to a natural-looking finish.",
+         "benefits":[
+            "Prevents buildup of grime and oils.",
+            "Protects against fading/cracking.",
+            "Maintains a fresh appearance.",
+            "Regular maintenance of these areas helps extend the life of plastic and vinyl components.",
+            "Keep your interior looking newer for longer."
+        ]
+    },
+    {
+        "id": 4,
+        "img": "/assets/img/service/Pet_Hair_Removal_service_4.jpeg",
+        "title": "Pet Hair Removal",
+        "desp": "We use specialized brushes and fabric-safe tools to remove embedded pet hair from seats, carpets, and corners where vacuums often miss. This service is especially helpful for dog owners who struggle with persistent shedding.",
+       "benefits":[
+            "Cleaner surfaces.",
+            "Reduced allergens.",
+            "Maintains a fresh appearance.",
+            "Elimination of odors caused by trapped hair. ",
+            "Makes the interior more pleasant for passengers.",
+            "Helps preserve upholstery from long-term damage."
+        ]
+    },
+    {
+        "id": 5,
+        "img": "/assets/img/service/Carpet_Seat_Shampoo_service_5.png",
+        "title": "Carpet & Seat Shampoo",
+        "desp": "We apply a fabric-safe cleaning solution to your carpets, cloth seats, and floor mats, then deep clean them using extraction machines or brushes. This removes stains, salt residue, food spills, and bacteria trapped in the fibers.",
+        "benefits":[
+            "Restores original color and softness.",
+            "Removes unpleasant odors.",
+            "Enhances the appearance of your vehicle’s interior.",
+            "Contributes to a healthier cabin environment. "   
+    ]
+    },
+    {
+        "id": 6,
+        "img": "/assets/img/service/Clay_Bar_Treatment_service_6.png",
+        "title": "Clay Bar Treatment",
+        "desp": "After washing, we use a professional-grade clay bar to remove bonded contaminants like tree sap, brake dust, and industrial fallout from your vehicle’s paint. This process leaves the paint smooth to the touch and ready for polishing or protection.",
+        "benefits":[
+            "Enhances the shine.",
+            "Preps the surface for wax or sealant.",
+            "Improves paint clarity.",
+            "Extends the results of paint correction.",   
+            "Helps maintain a high-gloss and smooth finish."   
+    ]
+    },
+    {
+        "id": 7,
+        "img": "/assets/img/service/Paint_Correction_single_or_multiple_service_7.png",
+        "title": "Paint Correction (Single or Multi-stage)",
+        "desp": "We perform precise machine polishing to remove swirl marks, oxidation, and surface scratches from your car’s paint. Single-stage correction removes light imperfections, while multi-stage correction goes deeper for a mirror-like finish.",
+         "benefits":[
+            "Restores gloss and clarity to dull paint.",
+            "Removes visual defects.",
+            "Improves resale value, and makes your vehicle stand out with a like-new finish. ",
+            "Improves the effectiveness and bonding of protective coatings applied afterward."
+        ]
+    },
+    {
+        "id": 9,
+        "img": "/assets/img/service/Paint Correct Spray Service 8.png",
+        "title": "Paint Protection Spray",
+        "desp": "A synthetic paint sealant or spray wax is applied to your vehicle after cleaning or correction. It bonds with the paint to create a hydrophobic layer that repels water and blocks UV rays.",
+        "benefits":[
+            "Restores gloss and clarity to dull paint.",
+            "Removes visual defects.",
+            "Improves resale value, and makes your vehicle stand out with a like-new finish. ",
+            "Improves the effectiveness and bonding of protective coatings applied afterward."
+        ]
+    },
+    {
+        "id": 10,
+        "img": "/assets/img/service/Steam Cleaning Service 9.png",
+        "title": "Steam Cleaning (Interior)",
+        "desp": "Using high-temperature steam, we sanitize seats, carpets, and hard-to-reach places like air vents and cup holders. Steam lifts embedded dirt, bacteria, and stains without soaking materials.",
+        "benefits":[
+            "Eco-friendly deep clean.",
+            "Eliminates bacteria and odors.",
+            "Rejuvenates upholstery without harsh chemicals.",
+            "Improves air quality inside the vehicle. "
+        ]
+    },
+    {
+        "id": 11,
+        "img": "/assets/img/service/Engine Bay Wipe-Down Service 10.png",
+        "title": "Engine Bay Wipe-Down",
+        "desp": "We carefully clean your engine bay using low-moisture techniques, including degreasers and microfiber cloths. Visible surfaces are wiped down to remove dust and grime without damaging components.",
+        "benefits":[
+            "Improves engine appearance.",
+            "Makes routine inspections easier.",
+            "Helps detect leaks early.",
+            "Enhances presentation for resale or trade-in evaluations."
+        ]
+    }
+]

@@ -1,0 +1,21 @@
+{
+  "basic": [
+    "Exterior Ultra Foam Wash",
+    "Interior Vacuuming",
+    "Dashboard Wipe Down",
+    "Console Wipe Down"
+  ],
+  "essential": [
+    "Everything in Basic Package, plus",
+    "Interior Shampoo",
+    "Interior Trim Polish"
+  ],
+  "premium": [
+    "Everything in Essential Package, plus",
+    "Steam Cleaning (Seats/Carpets)",
+    "Engine Bay Wipe-Down (extra charges for pet hair)",
+    "Interior Deodorizer",
+    "Headliner Spot Cleaning",
+    "Basic Paint Correction"
+  ]
+}

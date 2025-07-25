@@ -1,0 +1,54 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .cta-info {
+    max-width: 851px;
+    .cta-title {
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    .cta-desp {
+      margin-bottom: 40px;
+      max-width: 725px;
+      font-size: 16px;
+    }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 13px 19px;
+      font-size: 18px;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $primary;
+      @extend .btn-animation;
+    }
+  }
+}
+
+.cta .border-pr {
+  min-height: 100%;
+  width: 5px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+}
+
+.cta .cta-info .cta-btn{
+  background-color: var(--primary-color) !important;
+}
+
+
+.cta .border-wh {
+  min-height: 100%;
+  width: 5px;
+  margin-right: 55px;
+  margin-top: 10px;
+  background-color: #ffffff4a;
+}
+
+.btn-animation:hover, .cta .cta-info .cta-btn:hover {
+  font-size: 17px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  background-color: #7b6115 !important;
+  transform: translate3d(0, -8px, 0.01px);
+}
