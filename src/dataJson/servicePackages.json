@@ -1,0 +1,370 @@
+{
+  "categories": [
+    {
+      "id": "ceramic-coating",
+      "name": "Ceramic Coating",
+      "icon": "shield",
+      "packages": [
+        {
+          "id": "ceramic-level-1",
+          "name": "Level 1 - Essential Coat",
+          "duration": "3-4 hours",
+          "price": 299,
+          "priceDisplay": "$299",
+          "shortDescription": "Entry-level ceramic coating with 1-year protection for daily drivers.",
+          "details": [
+            "Single layer ceramic coat",
+            "Paint decontamination wash",
+            "Clay bar treatment",
+            "Surface preparation & IPA wipe-down",
+            "1-year hydrophobic protection",
+            "UV resistance"
+          ]
+        },
+        {
+          "id": "ceramic-level-2",
+          "name": "Level 2 - Pro Coat",
+          "duration": "5-6 hours",
+          "price": 499,
+          "priceDisplay": "$499",
+          "shortDescription": "Two-layer ceramic coating with 3-year protection and enhanced gloss.",
+          "details": [
+            "Everything in Level 1, plus",
+            "Two-layer ceramic coat application",
+            "Light paint correction (single stage)",
+            "Glass coating treatment",
+            "Wheel ceramic coating",
+            "3-year hydrophobic protection",
+            "Enhanced gloss & depth"
+          ]
+        },
+        {
+          "id": "ceramic-level-3",
+          "name": "Level 3 - Elite Coat",
+          "duration": "8-10 hours",
+          "price": 899,
+          "priceDisplay": "$899",
+          "shortDescription": "Professional-grade multi-layer ceramic coating with 5-year protection.",
+          "details": [
+            "Everything in Level 2, plus",
+            "Multi-stage paint correction",
+            "Three-layer ceramic coat application",
+            "Full exterior ceramic treatment (trim, glass, wheels)",
+            "Interior trim ceramic protection",
+            "5-year hydrophobic protection",
+            "Lifetime gloss guarantee",
+            "Annual maintenance inspection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exterior-detailing",
+      "name": "Exterior Detailing",
+      "icon": "car",
+      "packages": [
+        {
+          "id": "exterior-level-1",
+          "name": "Level 1 - Basic Exterior",
+          "duration": "1-2 hours",
+          "price": 79,
+          "priceDisplay": "$79",
+          "shortDescription": "Essential exterior wash and shine for a clean, refreshed look.",
+          "details": [
+            "Exterior ultra foam wash",
+            "Wheel & tire cleaning",
+            "Bug splatter removal",
+            "Tire shine coating",
+            "Glass cleaning (windows & mirrors)",
+            "Microfiber dry finish"
+          ]
+        },
+        {
+          "id": "exterior-level-2",
+          "name": "Level 2 - Full Exterior",
+          "duration": "2-3 hours",
+          "price": 149,
+          "priceDisplay": "$149",
+          "shortDescription": "Complete exterior detail with clay bar and paint protection spray.",
+          "details": [
+            "Everything in Level 1, plus",
+            "Clay bar treatment",
+            "Iron remover decontamination",
+            "Paint protection spray wax",
+            "Trim restoration",
+            "Wheel detailing",
+            "Door jamb cleaning"
+          ]
+        },
+        {
+          "id": "exterior-level-3",
+          "name": "Level 3 - Premium Exterior",
+          "duration": "4-5 hours",
+          "price": 249,
+          "priceDisplay": "$249",
+          "shortDescription": "Top-tier exterior detail with paint correction and long-lasting sealant.",
+          "details": [
+            "Everything in Level 2, plus",
+            "Single-stage paint correction",
+            "Machine polish for swirl removal",
+            "6-month paint sealant application",
+            "Engine bay wipe-down",
+            "Chrome & metal polishing",
+            "Plastic trim UV protection"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inside-out-packages",
+      "name": "Inside & Out Packages",
+      "icon": "sparkles",
+      "packages": [
+        {
+          "id": "insideout-level-1",
+          "name": "Level 1 - Basic Detail",
+          "duration": "2-3 hours",
+          "price": 150,
+          "priceDisplay": "$150",
+          "shortDescription": "Complete inside and outside clean — perfect for regular maintenance.",
+          "details": [
+            "Exterior ultra foam wash",
+            "Wheel & tire cleaning",
+            "Tire shine coating",
+            "Glass cleaning",
+            "Interior vacuuming",
+            "Dashboard & trim cleaning",
+            "Seat belt cleaning",
+            "Microfiber dry finish"
+          ]
+        },
+        {
+          "id": "insideout-level-2",
+          "name": "Level 2 - Essential Detail",
+          "duration": "3-4 hours",
+          "price": 190,
+          "priceDisplay": "$190",
+          "shortDescription": "Enhanced full detail with steam clean and UV protection.",
+          "details": [
+            "Everything in Level 1, plus",
+            "Door panel & cupholder cleaning",
+            "Steam clean (vents, trim, hard surfaces)",
+            "Pet hair removal up to 80%",
+            "Dashboard UV protection",
+            "Paint protection spray",
+            "Tire shine"
+          ]
+        },
+        {
+          "id": "insideout-level-3",
+          "name": "Level 3 - Premium Detail",
+          "duration": "5-6 hours",
+          "price": 230,
+          "priceDisplay": "$230",
+          "shortDescription": "The ultimate full-service detail — showroom condition inside and out.",
+          "details": [
+            "Everything in Level 2, plus",
+            "Steam cleaning (seats, carpets, mats)",
+            "Headliner spot cleaning",
+            "Interior deodorizer treatment",
+            "Carpet & seat shampoo",
+            "Wheel detailing",
+            "Trim restoration",
+            "Clay bar & paint decontamination"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interior-detailing",
+      "name": "Interior Detailing",
+      "icon": "seat",
+      "packages": [
+        {
+          "id": "interior-level-1",
+          "name": "Level 1 - Basic Interior",
+          "duration": "1-2 hours",
+          "price": 89,
+          "priceDisplay": "$89",
+          "shortDescription": "Quick and thorough interior clean for a fresh cabin.",
+          "details": [
+            "Interior vacuuming (seats, floors, trunk)",
+            "Dashboard wipe-down",
+            "Console & door panel cleaning",
+            "Cup holder cleaning",
+            "Window interior cleaning",
+            "Air freshener"
+          ]
+        },
+        {
+          "id": "interior-level-2",
+          "name": "Level 2 - Deep Interior",
+          "duration": "2-3 hours",
+          "price": 149,
+          "priceDisplay": "$149",
+          "shortDescription": "Deep interior clean with steam and shampoo for a like-new feel.",
+          "details": [
+            "Everything in Level 1, plus",
+            "Carpet & mat shampoo",
+            "Seat shampoo (fabric)",
+            "Steam cleaning (vents, trim, crevices)",
+            "Leather conditioning (if applicable)",
+            "Pet hair removal",
+            "Dashboard UV protection"
+          ]
+        },
+        {
+          "id": "interior-level-3",
+          "name": "Level 3 - Full Interior Restoration",
+          "duration": "4-5 hours",
+          "price": 249,
+          "priceDisplay": "$249",
+          "shortDescription": "Complete interior restoration — perfect for heavily soiled vehicles.",
+          "details": [
+            "Everything in Level 2, plus",
+            "Headliner spot cleaning",
+            "Full extraction cleaning",
+            "Odor elimination treatment",
+            "Seat belt cleaning",
+            "Interior deodorizer",
+            "Stain protection spray",
+            "Detail brush cleaning of all vents & seams"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paint-correction",
+      "name": "Paint Correction",
+      "icon": "polish",
+      "packages": [
+        {
+          "id": "paintcorrection-level-1",
+          "name": "Level 1 - Enhancement Polish",
+          "duration": "3-4 hours",
+          "price": 199,
+          "priceDisplay": "$199",
+          "shortDescription": "Single-stage polish to enhance gloss and remove light swirls.",
+          "details": [
+            "Decontamination wash",
+            "Clay bar treatment",
+            "Single-stage machine polish",
+            "Light swirl & scratch removal",
+            "IPA wipe-down",
+            "Paint protection spray wax",
+            "Up to 50% defect removal"
+          ]
+        },
+        {
+          "id": "paintcorrection-level-2",
+          "name": "Level 2 - Two-Stage Correction",
+          "duration": "6-8 hours",
+          "price": 349,
+          "priceDisplay": "$349",
+          "shortDescription": "Two-stage correction for significant swirls, scratches, and oxidation.",
+          "details": [
+            "Everything in Level 1, plus",
+            "Two-stage machine polish (cutting + finishing)",
+            "Deep scratch & swirl removal",
+            "Oxidation removal",
+            "Paint thickness measurement",
+            "Finishing polish for high gloss",
+            "Up to 80% defect removal",
+            "6-month sealant protection"
+          ]
+        },
+        {
+          "id": "paintcorrection-level-3",
+          "name": "Level 3 - Full Correction",
+          "duration": "10-14 hours",
+          "price": 599,
+          "priceDisplay": "$599",
+          "shortDescription": "Professional multi-stage correction for near-perfect paint clarity.",
+          "details": [
+            "Everything in Level 2, plus",
+            "Multi-stage paint correction",
+            "Wet sanding for severe defects (if needed)",
+            "Panel-by-panel correction",
+            "Paint thickness monitoring throughout",
+            "Up to 95% defect removal",
+            "Ceramic coating prep",
+            "Final inspection under professional lighting",
+            "1-year paint sealant"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paint-protection-film",
+      "name": "Paint Protection Film",
+      "icon": "film",
+      "packages": [
+        {
+          "id": "ppf-level-1",
+          "name": "Level 1 - Partial Front",
+          "duration": "4-5 hours",
+          "price": 499,
+          "priceDisplay": "$499",
+          "shortDescription": "PPF on high-impact areas — hood, fenders, and bumper.",
+          "details": [
+            "Partial hood coverage",
+            "Front bumper coverage",
+            "Front fender coverage",
+            "Mirror coverage",
+            "Self-healing film technology",
+            "UV protection",
+            "5-year film warranty"
+          ]
+        },
+        {
+          "id": "ppf-level-2",
+          "name": "Level 2 - Full Front",
+          "duration": "6-8 hours",
+          "price": 899,
+          "priceDisplay": "$899",
+          "shortDescription": "Complete front-end PPF coverage for maximum rock chip protection.",
+          "details": [
+            "Full hood coverage",
+            "Full front bumper coverage",
+            "Full front fenders coverage",
+            "Side mirrors coverage",
+            "A-pillars coverage",
+            "Headlights coverage",
+            "Self-healing film technology",
+            "UV & chemical resistance",
+            "7-year film warranty"
+          ]
+        },
+        {
+          "id": "ppf-level-3",
+          "name": "Level 3 - Full Vehicle",
+          "duration": "2-3 days",
+          "price": 2499,
+          "priceDisplay": "$2,499",
+          "shortDescription": "Complete vehicle PPF coverage — total paint protection from all elements.",
+          "details": [
+            "Full vehicle coverage (all painted panels)",
+            "Full hood, roof, trunk",
+            "All doors & fenders",
+            "Full bumpers (front & rear)",
+            "Mirrors, pillars & sills",
+            "Headlights & tail lights",
+            "Self-healing premium film",
+            "Gloss or matte finish options",
+            "UV, chemical & scratch resistance",
+            "10-year film warranty",
+            "Annual inspection included"
+          ]
+        }
+      ]
+    }
+  ],
+  "addOns": [
+    { "id": "engine-cleaning", "name": "Engine Cleaning", "price": 65, "priceDisplay": "$50–$80" },
+    { "id": "headlight-restoration", "name": "Headlight Restoration", "price": 50, "priceDisplay": "$50" },
+    { "id": "car-seats", "name": "Car Seats Cleaning", "price": 40, "priceDisplay": "Varies" },
+    { "id": "polishing", "name": "Polishing", "price": 100, "priceDisplay": "$100" },
+    { "id": "interior-deodorizer", "name": "Interior Deodorizer", "price": 40, "priceDisplay": "$30–$50" },
+    { "id": "air-freshener", "name": "Air Freshener", "price": 15, "priceDisplay": "$15" }
+  ]
+}
