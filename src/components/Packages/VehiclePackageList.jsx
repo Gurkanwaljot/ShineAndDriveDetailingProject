@@ -76,10 +76,34 @@ const VehiclePackageItem = ({ pkg, onSelect }) => {
 };
 
 const VehiclePackageList = ({ vehicle, onSelect }) => {
-  const hasQuoteOnly = vehicle.packages.some((p) => p.quoteOnly);
+  const hasServiceTypes = vehicle.serviceTypes && vehicle.serviceTypes.length > 0;
+
+  if (!hasServiceTypes) {
+    return null;
+  }
+
+  const showSubTabs = vehicle.serviceTypes.length > 1;
+  const [activeServiceType, setActiveServiceType] = useState(vehicle.serviceTypes[0].id);
+
+  const currentServiceType = vehicle.serviceTypes.find((st) => st.id === activeServiceType) || vehicle.serviceTypes[0];
+  const hasQuoteOnly = currentServiceType.packages.some((p) => p.quoteOnly);
 
   return (
     <div className="package-list">
+      {showSubTabs && (
+        <div className="service-type-tabs">
+          {vehicle.serviceTypes.map((st) => (
+            <button
+              key={st.id}
+              className={`service-type-tab ${activeServiceType === st.id ? "service-type-tab--active" : ""}`}
+              onClick={() => setActiveServiceType(st.id)}
+            >
+              {st.label}
+            </button>
+          ))}
+        </div>
+      )}
+
       {hasQuoteOnly && (
         <div className="package-list__quote-banner">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -90,9 +114,14 @@ const VehiclePackageList = ({ vehicle, onSelect }) => {
           Pricing for work vans varies based on vehicle condition. A custom quote will be provided after reviewing your van.
         </div>
       )}
+
       <div className="package-list__items">
-        {vehicle.packages.map((pkg) => (
-          <VehiclePackageItem key={pkg.id} pkg={pkg} onSelect={onSelect} />
+        {currentServiceType.packages.map((pkg) => (
+          <VehiclePackageItem
+            key={pkg.id}
+            pkg={pkg}
+            onSelect={(p) => onSelect(p, currentServiceType)}
+          />
         ))}
       </div>
     </div>

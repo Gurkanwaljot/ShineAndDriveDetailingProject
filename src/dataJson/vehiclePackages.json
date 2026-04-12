@@ -2,54 +2,161 @@
   {
     "id": "cars",
     "name": "Cars",
-    "packages": [
+    "serviceTypes": [
       {
-        "id": "cars-level1",
-        "level": "Level 1",
-        "price": "$150",
-        "duration": "2–3 hrs",
-        "shortDescription": "Essential wash and interior clean to freshen up your car.",
-        "features": [
-          "Exterior Ultra Foam Wash",
-          "Wheel & Tire Cleaning",
-          "Bug Splatter Removal",
-          "Tire Shine Coating",
-          "Glass Cleaning (Windows & Mirrors)",
-          "Interior Vacuuming",
-          "Dashboard & Trim Cleaning",
-          "Seat Belt Cleaning"
+        "id": "cars-interior",
+        "label": "Interior",
+        "packages": [
+          {
+            "id": "cars-interior-level1",
+            "level": "Level 1",
+            "price": "$140",
+            "duration": "2–3 hrs",
+            "shortDescription": "Thorough interior vacuum, dashboard clean and surface wipe-down.",
+            "features": [
+              "Full Interior Vacuuming",
+              "Dashboard & Trim Cleaning",
+              "Console & Cupholder Cleaning",
+              "Door Panel Wipe-Down",
+              "Glass Cleaning (Interior)",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "cars-interior-level2",
+            "level": "Level 2",
+            "price": "$190",
+            "duration": "3–4 hrs",
+            "shortDescription": "Deep interior clean with steam and pet hair removal.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Steam Clean Surfaces",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "Carpet & Mat Shampooing",
+              "Seat Conditioning"
+            ]
+          },
+          {
+            "id": "cars-interior-level3",
+            "level": "Level 3",
+            "price": "$250",
+            "duration": "4–5 hrs",
+            "shortDescription": "Full interior restoration with deodorizer and headliner cleaning.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Leather Conditioning (if applicable)",
+              "Complete Odor Elimination"
+            ]
+          }
         ]
       },
       {
-        "id": "cars-level2",
-        "level": "Level 2",
-        "price": "$190",
-        "duration": "3–4 hrs",
-        "shortDescription": "Deep clean with steam treatment and pet hair removal.",
-        "features": [
-          "Everything in Level 1, plus",
-          "Door Panel & Cupholder Cleaning",
-          "Steam Clean",
-          "Pet Hair Removal (up to 80%)",
-          "Dashboard UV Protection",
-          "Carpet & Mat Shampooing",
-          "Seat Conditioning"
+        "id": "cars-exterior",
+        "label": "Exterior",
+        "packages": [
+          {
+            "id": "cars-exterior-level1",
+            "level": "Level 1",
+            "price": "$80",
+            "duration": "1–1.5 hrs",
+            "shortDescription": "Foam wash, wheel clean, tire shine and glass clean.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Bug Splatter Removal",
+              "Tire Shine Coating",
+              "Glass Cleaning (Windows & Mirrors)",
+              "Rinse & Air Dry"
+            ]
+          },
+          {
+            "id": "cars-exterior-level2",
+            "level": "Level 2",
+            "price": "$120",
+            "duration": "2–3 hrs",
+            "shortDescription": "Deep exterior with clay bar, hand wax and trim restoration.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Clay Bar Decontamination",
+              "Hand Wax Application",
+              "Trim Restoration",
+              "Door Jamb Cleaning",
+              "Wheel Detailing"
+            ]
+          },
+          {
+            "id": "cars-exterior-level3",
+            "level": "Level 3",
+            "price": "$170",
+            "duration": "3–4 hrs",
+            "shortDescription": "Full exterior restoration with paint correction and sealant.",
+            "features": [
+              "Everything in Level 2, plus",
+              "1-Step Paint Correction",
+              "Paint Sealant (6-month protection)",
+              "Chrome & Metal Polishing",
+              "Headlight Restoration",
+              "Engine Bay Wipe-Down"
+            ]
+          }
         ]
       },
       {
-        "id": "cars-level3",
-        "level": "Level 3",
-        "price": "$230",
-        "duration": "5–6 hrs",
-        "shortDescription": "Full restoration — steam seats, deodorizer, wheel detail and trim.",
-        "features": [
-          "Everything in Level 2, plus",
-          "Steam Cleaning (Seats, Carpets, Mats)",
-          "Headliner Spot Cleaning",
-          "Interior Deodorizer Treatment",
-          "Wheel Detailing",
-          "Trim Restoration",
-          "Paint Sealant"
+        "id": "cars-full",
+        "label": "Full Service",
+        "packages": [
+          {
+            "id": "cars-full-level1",
+            "level": "Level 1",
+            "price": "$200",
+            "duration": "2.5–3.5 hrs",
+            "shortDescription": "Complete interior and exterior wash combo.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Glass Cleaning",
+              "Interior Vacuuming",
+              "Dashboard & Trim Cleaning",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "cars-full-level2",
+            "level": "Level 2",
+            "price": "$260",
+            "duration": "4–5 hrs",
+            "shortDescription": "Deep interior + clay bar exterior with steam and UV protection.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Steam Clean Surfaces",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "Clay Bar Decontamination",
+              "Hand Wax",
+              "Carpet & Mat Shampooing"
+            ]
+          },
+          {
+            "id": "cars-full-level3",
+            "level": "Level 3",
+            "price": "$340",
+            "duration": "5–7 hrs",
+            "shortDescription": "Top-to-bottom restoration — full interior shampoo and exterior paint correction.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Wheel Detailing",
+              "Trim Restoration",
+              "1-Step Paint Correction",
+              "Paint Sealant"
+            ]
+          }
         ]
       }
     ]
@@ -57,54 +164,161 @@
   {
     "id": "suvs",
     "name": "SUVs",
-    "packages": [
+    "serviceTypes": [
       {
-        "id": "suvs-level1",
-        "level": "Level 1",
-        "price": "$170",
-        "duration": "2.5–3.5 hrs",
-        "shortDescription": "Thorough exterior wash and interior refresh for your SUV.",
-        "features": [
-          "Exterior Ultra Foam Wash",
-          "Wheel & Tire Cleaning",
-          "Bug Splatter Removal",
-          "Tire Shine Coating",
-          "Glass Cleaning (Windows & Mirrors)",
-          "Interior Vacuuming",
-          "Dashboard & Trim Cleaning",
-          "Seat Belt Cleaning"
+        "id": "suvs-interior",
+        "label": "Interior",
+        "packages": [
+          {
+            "id": "suvs-interior-level1",
+            "level": "Level 1",
+            "price": "$160",
+            "duration": "2.5–3.5 hrs",
+            "shortDescription": "Full interior vacuum and surface clean for SUVs.",
+            "features": [
+              "Full Interior Vacuuming (3 rows)",
+              "Dashboard & Trim Cleaning",
+              "Console & Cupholder Cleaning",
+              "Door Panel Wipe-Down",
+              "Glass Cleaning (Interior)",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "suvs-interior-level2",
+            "level": "Level 2",
+            "price": "$220",
+            "duration": "3.5–4.5 hrs",
+            "shortDescription": "Deep interior clean with steam and pet hair removal for SUVs.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Steam Clean Surfaces",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "3-Row Carpet & Mat Shampooing",
+              "Seat Conditioning"
+            ]
+          },
+          {
+            "id": "suvs-interior-level3",
+            "level": "Level 3",
+            "price": "$290",
+            "duration": "5–6 hrs",
+            "shortDescription": "Full SUV interior restoration with deodorizer and headliner clean.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Leather Conditioning (if applicable)",
+              "Complete Odor Elimination"
+            ]
+          }
         ]
       },
       {
-        "id": "suvs-level2",
-        "level": "Level 2",
-        "price": "$210",
-        "duration": "3.5–5 hrs",
-        "shortDescription": "Deep clean with steam treatment, pet hair removal and UV protection.",
-        "features": [
-          "Everything in Level 1, plus",
-          "Door Panel & Cupholder Cleaning",
-          "Steam Clean",
-          "Pet Hair Removal (up to 80%)",
-          "Dashboard UV Protection",
-          "3-Row Carpet & Mat Shampooing",
-          "Seat Conditioning"
+        "id": "suvs-exterior",
+        "label": "Exterior",
+        "packages": [
+          {
+            "id": "suvs-exterior-level1",
+            "level": "Level 1",
+            "price": "$100",
+            "duration": "1.5–2 hrs",
+            "shortDescription": "Full exterior foam wash, wheel clean and glass clean for SUVs.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Bug Splatter Removal",
+              "Tire Shine Coating",
+              "Glass Cleaning (Windows & Mirrors)",
+              "Rinse & Air Dry"
+            ]
+          },
+          {
+            "id": "suvs-exterior-level2",
+            "level": "Level 2",
+            "price": "$140",
+            "duration": "2.5–3.5 hrs",
+            "shortDescription": "Clay bar, hand wax and trim restoration for SUVs.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Clay Bar Decontamination",
+              "Hand Wax Application",
+              "Trim Restoration",
+              "Door Jamb Cleaning",
+              "Wheel Detailing"
+            ]
+          },
+          {
+            "id": "suvs-exterior-level3",
+            "level": "Level 3",
+            "price": "$190",
+            "duration": "3.5–5 hrs",
+            "shortDescription": "Full SUV exterior restoration with paint correction and sealant.",
+            "features": [
+              "Everything in Level 2, plus",
+              "1-Step Paint Correction",
+              "Paint Sealant (6-month protection)",
+              "Chrome & Metal Polishing",
+              "Headlight Restoration",
+              "Engine Bay Wipe-Down"
+            ]
+          }
         ]
       },
       {
-        "id": "suvs-level3",
-        "level": "Level 3",
-        "price": "$260",
-        "duration": "5–7 hrs",
-        "shortDescription": "Complete top-to-bottom restoration for your SUV.",
-        "features": [
-          "Everything in Level 2, plus",
-          "Steam Cleaning (Seats, Carpets, Mats)",
-          "Headliner Spot Cleaning",
-          "Interior Deodorizer Treatment",
-          "Wheel Detailing",
-          "Trim Restoration",
-          "Paint Sealant"
+        "id": "suvs-full",
+        "label": "Full Service",
+        "packages": [
+          {
+            "id": "suvs-full-level1",
+            "level": "Level 1",
+            "price": "$230",
+            "duration": "3–4 hrs",
+            "shortDescription": "Full interior and exterior wash combo for SUVs.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Glass Cleaning",
+              "Interior Vacuuming (3 rows)",
+              "Dashboard & Trim Cleaning",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "suvs-full-level2",
+            "level": "Level 2",
+            "price": "$300",
+            "duration": "5–6 hrs",
+            "shortDescription": "Deep interior + clay bar exterior with steam for SUVs.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Steam Clean Surfaces",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "Clay Bar Decontamination",
+              "Hand Wax",
+              "3-Row Carpet & Mat Shampooing"
+            ]
+          },
+          {
+            "id": "suvs-full-level3",
+            "level": "Level 3",
+            "price": "$380",
+            "duration": "6–8 hrs",
+            "shortDescription": "Complete SUV restoration — full interior shampoo and paint correction.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Wheel Detailing",
+              "Trim Restoration",
+              "1-Step Paint Correction",
+              "Paint Sealant"
+            ]
+          }
         ]
       }
     ]
@@ -112,54 +326,161 @@
   {
     "id": "trucks",
     "name": "Trucks",
-    "packages": [
+    "serviceTypes": [
       {
-        "id": "trucks-level1",
-        "level": "Level 1",
-        "price": "$200",
-        "duration": "2.5–3.5 hrs",
-        "shortDescription": "Complete exterior wash and interior vacuum for your truck.",
-        "features": [
-          "Exterior Ultra Foam Wash",
-          "Wheel & Tire Cleaning",
-          "Bug Splatter Removal",
-          "Tire Shine Coating",
-          "Glass Cleaning (Windows & Mirrors)",
-          "Cab Interior Vacuuming",
-          "Dashboard & Trim Cleaning",
-          "Seat Belt Cleaning"
+        "id": "trucks-interior",
+        "label": "Interior",
+        "packages": [
+          {
+            "id": "trucks-interior-level1",
+            "level": "Level 1",
+            "price": "$180",
+            "duration": "2.5–3.5 hrs",
+            "shortDescription": "Full cab interior vacuum and surface clean for trucks.",
+            "features": [
+              "Full Cab Interior Vacuuming",
+              "Dashboard & Trim Cleaning",
+              "Console & Cupholder Cleaning",
+              "Door Panel Wipe-Down",
+              "Glass Cleaning (Interior)",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "trucks-interior-level2",
+            "level": "Level 2",
+            "price": "$250",
+            "duration": "3.5–5 hrs",
+            "shortDescription": "Deep cab interior with steam and pet hair removal.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Steam Clean Surfaces",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "Carpet & Floor Mat Shampooing",
+              "Seat Conditioning"
+            ]
+          },
+          {
+            "id": "trucks-interior-level3",
+            "level": "Level 3",
+            "price": "$320",
+            "duration": "5–6 hrs",
+            "shortDescription": "Full truck cab restoration with deodorizer and headliner clean.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Leather Conditioning (if applicable)",
+              "Complete Odor Elimination"
+            ]
+          }
         ]
       },
       {
-        "id": "trucks-level2",
-        "level": "Level 2",
-        "price": "$240",
-        "duration": "3.5–5 hrs",
-        "shortDescription": "Deep interior clean with steam, pet hair removal and UV protection.",
-        "features": [
-          "Everything in Level 1, plus",
-          "Door Panel & Cupholder Cleaning",
-          "Steam Clean",
-          "Pet Hair Removal (up to 80%)",
-          "Dashboard UV Protection",
-          "Carpet & Floor Mat Shampooing",
-          "Seat Conditioning"
+        "id": "trucks-exterior",
+        "label": "Exterior",
+        "packages": [
+          {
+            "id": "trucks-exterior-level1",
+            "level": "Level 1",
+            "price": "$120",
+            "duration": "1.5–2 hrs",
+            "shortDescription": "Full exterior foam wash, wheel clean and glass clean for trucks.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Bug Splatter Removal",
+              "Tire Shine Coating",
+              "Glass Cleaning (Windows & Mirrors)",
+              "Rinse & Air Dry"
+            ]
+          },
+          {
+            "id": "trucks-exterior-level2",
+            "level": "Level 2",
+            "price": "$160",
+            "duration": "2.5–3.5 hrs",
+            "shortDescription": "Clay bar, hand wax and trim restoration for trucks.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Clay Bar Decontamination",
+              "Hand Wax Application",
+              "Trim Restoration",
+              "Door Jamb Cleaning",
+              "Wheel Detailing"
+            ]
+          },
+          {
+            "id": "trucks-exterior-level3",
+            "level": "Level 3",
+            "price": "$210",
+            "duration": "3.5–5 hrs",
+            "shortDescription": "Full truck exterior restoration with paint correction and sealant.",
+            "features": [
+              "Everything in Level 2, plus",
+              "1-Step Paint Correction",
+              "Paint Sealant (6-month protection)",
+              "Chrome & Metal Polishing",
+              "Headlight Restoration",
+              "Engine Bay Wipe-Down"
+            ]
+          }
         ]
       },
       {
-        "id": "trucks-level3",
-        "level": "Level 3",
-        "price": "$280",
-        "duration": "5–7 hrs",
-        "shortDescription": "Full restoration with deodorizer, wheel detail and paint sealant.",
-        "features": [
-          "Everything in Level 2, plus",
-          "Steam Cleaning (Seats, Carpets, Mats)",
-          "Headliner Spot Cleaning",
-          "Interior Deodorizer Treatment",
-          "Wheel Detailing",
-          "Trim Restoration",
-          "Paint Sealant"
+        "id": "trucks-full",
+        "label": "Full Service",
+        "packages": [
+          {
+            "id": "trucks-full-level1",
+            "level": "Level 1",
+            "price": "$260",
+            "duration": "3.5–4.5 hrs",
+            "shortDescription": "Full interior and exterior wash combo for trucks.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Glass Cleaning",
+              "Cab Interior Vacuuming",
+              "Dashboard & Trim Cleaning",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "trucks-full-level2",
+            "level": "Level 2",
+            "price": "$310",
+            "duration": "5–6 hrs",
+            "shortDescription": "Deep interior + clay bar exterior with steam for trucks.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Steam Clean Surfaces",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "Clay Bar Decontamination",
+              "Hand Wax",
+              "Carpet & Floor Mat Shampooing"
+            ]
+          },
+          {
+            "id": "trucks-full-level3",
+            "level": "Level 3",
+            "price": "$420",
+            "duration": "6–8 hrs",
+            "shortDescription": "Complete truck restoration — full interior shampoo and paint correction.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Wheel Detailing",
+              "Trim Restoration",
+              "1-Step Paint Correction",
+              "Paint Sealant"
+            ]
+          }
         ]
       }
     ]
@@ -167,54 +488,60 @@
   {
     "id": "work-vans",
     "name": "Work Vans",
-    "packages": [
+    "serviceTypes": [
       {
-        "id": "work-vans-level1",
-        "level": "Level 1",
-        "quoteOnly": true,
-        "duration": "2.5–3.5 hrs",
-        "shortDescription": "Full exterior wash and interior clean for work vans.",
-        "features": [
-          "Exterior Ultra Foam Wash",
-          "Wheel & Tire Cleaning",
-          "Bug Splatter Removal",
-          "Tire Shine Coating",
-          "Glass Cleaning (Windows & Mirrors)",
-          "Cargo & Cabin Vacuuming",
-          "Dashboard & Trim Cleaning",
-          "Seat Belt Cleaning"
-        ]
-      },
-      {
-        "id": "work-vans-level2",
-        "level": "Level 2",
-        "quoteOnly": true,
-        "duration": "3.5–5 hrs",
-        "shortDescription": "Deep clean with steam and pet hair removal for work vans.",
-        "features": [
-          "Everything in Level 1, plus",
-          "Door Panel & Cupholder Cleaning",
-          "Steam Clean",
-          "Pet Hair Removal (up to 80%)",
-          "Dashboard UV Protection",
-          "Cargo Floor Shampooing",
-          "Seat Conditioning"
-        ]
-      },
-      {
-        "id": "work-vans-level3",
-        "level": "Level 3",
-        "quoteOnly": true,
-        "duration": "5–7 hrs",
-        "shortDescription": "Complete restoration including deodorizer and trim for work vans.",
-        "features": [
-          "Everything in Level 2, plus",
-          "Steam Cleaning (Seats, Carpets, Mats)",
-          "Headliner Spot Cleaning",
-          "Interior Deodorizer Treatment",
-          "Wheel Detailing",
-          "Trim Restoration",
-          "Paint Sealant"
+        "id": "work-vans-full",
+        "label": "Full Service",
+        "packages": [
+          {
+            "id": "work-vans-level1",
+            "level": "Level 1",
+            "quoteOnly": true,
+            "duration": "2.5–3.5 hrs",
+            "shortDescription": "Full exterior wash and interior clean for work vans.",
+            "features": [
+              "Exterior Ultra Foam Wash",
+              "Wheel & Tire Cleaning",
+              "Bug Splatter Removal",
+              "Tire Shine Coating",
+              "Glass Cleaning (Windows & Mirrors)",
+              "Cargo & Cabin Vacuuming",
+              "Dashboard & Trim Cleaning",
+              "Seat Belt Cleaning"
+            ]
+          },
+          {
+            "id": "work-vans-level2",
+            "level": "Level 2",
+            "quoteOnly": true,
+            "duration": "3.5–5 hrs",
+            "shortDescription": "Deep clean with steam and pet hair removal for work vans.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Door Panel & Cupholder Cleaning",
+              "Steam Clean",
+              "Pet Hair Removal (up to 80%)",
+              "Dashboard UV Protection",
+              "Cargo Floor Shampooing",
+              "Seat Conditioning"
+            ]
+          },
+          {
+            "id": "work-vans-level3",
+            "level": "Level 3",
+            "quoteOnly": true,
+            "duration": "5–7 hrs",
+            "shortDescription": "Complete restoration including deodorizer and trim for work vans.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Steam Cleaning (Seats, Carpets, Mats)",
+              "Headliner Spot Cleaning",
+              "Interior Deodorizer Treatment",
+              "Wheel Detailing",
+              "Trim Restoration",
+              "Paint Sealant"
+            ]
+          }
         ]
       }
     ]
@@ -222,54 +549,201 @@
   {
     "id": "boats",
     "name": "Boats",
-    "packages": [
+    "serviceTypes": [
       {
-        "id": "boats-level1",
-        "level": "Level 1",
-        "price": "$250",
-        "duration": "3–4 hrs",
-        "shortDescription": "Exterior wash, deck clean and hull wipe-down.",
-        "features": [
-          "Hull Exterior Foam Wash",
-          "Deck Cleaning & Rinse",
-          "Glass & Windshield Cleaning",
-          "Upholstery Vacuuming",
-          "Dashboard & Console Wipe-Down",
-          "Teak & Trim Cleaning",
-          "Tire/Wheel on Trailer (if applicable)"
+        "id": "boats-full",
+        "label": "Full Service",
+        "packages": [
+          {
+            "id": "boats-level1",
+            "level": "Level 1",
+            "price": "$250",
+            "duration": "3–4 hrs",
+            "shortDescription": "Exterior wash, deck clean and hull wipe-down.",
+            "features": [
+              "Hull Exterior Foam Wash",
+              "Deck Cleaning & Rinse",
+              "Glass & Windshield Cleaning",
+              "Upholstery Vacuuming",
+              "Dashboard & Console Wipe-Down",
+              "Teak & Trim Cleaning"
+            ]
+          },
+          {
+            "id": "boats-level2",
+            "level": "Level 2",
+            "price": "$380",
+            "duration": "4–6 hrs",
+            "shortDescription": "Deep clean with upholstery shampoo and UV protection.",
+            "features": [
+              "Everything in Level 1, plus",
+              "Upholstery Shampooing",
+              "Bilge Area Wipe-Down",
+              "Canvas & Cover Cleaning",
+              "Dashboard UV Protection",
+              "Metal & Chrome Polishing"
+            ]
+          },
+          {
+            "id": "boats-level3",
+            "level": "Level 3",
+            "price": "$550",
+            "duration": "6–8 hrs",
+            "shortDescription": "Full marine detailing with hull polish, wax and interior restoration.",
+            "features": [
+              "Everything in Level 2, plus",
+              "Hull Compound & Polish",
+              "Marine Wax / Sealant Application",
+              "Teak Oil Treatment",
+              "Full Interior Deodorizer",
+              "Mildew & Stain Treatment",
+              "Engine Compartment Wipe-Down"
+            ]
+          }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "paint-correction",
+    "name": "Paint Correction",
+    "serviceTypes": [
       {
-        "id": "boats-level2",
-        "level": "Level 2",
-        "price": "$380",
-        "duration": "4–6 hrs",
-        "shortDescription": "Deep clean with upholstery shampoo and UV protection.",
-        "features": [
-          "Everything in Level 1, plus",
-          "Upholstery Shampooing",
-          "Bilge Area Wipe-Down",
-          "Canvas & Cover Cleaning",
-          "Dashboard UV Protection",
-          "Metal & Chrome Polishing",
-          "Carpet Shampooing (cabin if applicable)"
+        "id": "paint-correction-stages",
+        "label": "By Vehicle",
+        "packages": [
+          {
+            "id": "paint-car-1stage",
+            "level": "Car — 1 Stage",
+            "price": "$350",
+            "duration": "4–6 hrs",
+            "shortDescription": "Single-stage machine polish to remove light swirls and scratches from cars.",
+            "features": [
+              "Exterior Wash & Decontamination",
+              "Clay Bar Treatment",
+              "Single-Stage Machine Polish",
+              "Light Swirl & Scratch Removal",
+              "Up to 50% Defect Correction",
+              "Paint Sealant Application"
+            ]
+          },
+          {
+            "id": "paint-car-2stage",
+            "level": "Car — 2 Stage",
+            "price": "$550",
+            "duration": "7–9 hrs",
+            "shortDescription": "Two-stage compound and polish for moderate to heavy paint defects on cars.",
+            "features": [
+              "Everything in 1 Stage, plus",
+              "Two-Stage Compound & Polish",
+              "Up to 80% Defect Correction",
+              "Swirl, Scratch & Oxidation Removal",
+              "Gloss Enhancement Coating",
+              "Paint Protection Wax"
+            ]
+          },
+          {
+            "id": "paint-suv-1stage",
+            "level": "SUV — 1 Stage",
+            "price": "$450",
+            "duration": "5–7 hrs",
+            "shortDescription": "Single-stage machine polish for light swirl and scratch removal on SUVs.",
+            "features": [
+              "Exterior Wash & Decontamination",
+              "Clay Bar Treatment",
+              "Single-Stage Machine Polish",
+              "Light Swirl & Scratch Removal",
+              "Up to 50% Defect Correction",
+              "Paint Sealant Application"
+            ]
+          },
+          {
+            "id": "paint-suv-2stage",
+            "level": "SUV — 2 Stage",
+            "price": "$650",
+            "duration": "8–10 hrs",
+            "shortDescription": "Two-stage correction for moderate to heavy paint defects on SUVs.",
+            "features": [
+              "Everything in 1 Stage, plus",
+              "Two-Stage Compound & Polish",
+              "Up to 80% Defect Correction",
+              "Swirl, Scratch & Oxidation Removal",
+              "Gloss Enhancement Coating",
+              "Paint Protection Wax"
+            ]
+          },
+          {
+            "id": "paint-truck-1stage",
+            "level": "Truck — 1 Stage",
+            "price": "$550",
+            "duration": "5–7 hrs",
+            "shortDescription": "Single-stage machine polish for light defect removal on trucks.",
+            "features": [
+              "Exterior Wash & Decontamination",
+              "Clay Bar Treatment",
+              "Single-Stage Machine Polish",
+              "Light Swirl & Scratch Removal",
+              "Up to 50% Defect Correction",
+              "Paint Sealant Application"
+            ]
+          },
+          {
+            "id": "paint-truck-2stage",
+            "level": "Truck — 2 Stage",
+            "price": "$750",
+            "duration": "8–12 hrs",
+            "shortDescription": "Two-stage correction for moderate to heavy paint defects on trucks.",
+            "features": [
+              "Everything in 1 Stage, plus",
+              "Two-Stage Compound & Polish",
+              "Up to 80% Defect Correction",
+              "Swirl, Scratch & Oxidation Removal",
+              "Gloss Enhancement Coating",
+              "Paint Protection Wax"
+            ]
+          }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": "engine-cleaning",
+    "name": "Engine Cleaning",
+    "serviceTypes": [
       {
-        "id": "boats-level3",
-        "level": "Level 3",
-        "price": "$550",
-        "duration": "6–8 hrs",
-        "shortDescription": "Full marine detailing with hull polish, wax and interior restoration.",
-        "features": [
-          "Everything in Level 2, plus",
-          "Hull Compound & Polish",
-          "Marine Wax / Sealant Application",
-          "Teak Oil Treatment",
-          "Full Interior Deodorizer",
-          "Mildew & Stain Treatment",
-          "Engine Compartment Wipe-Down",
-          "Final Inspection & Detailing Report"
+        "id": "engine-cleaning-types",
+        "label": "Service",
+        "packages": [
+          {
+            "id": "engine-standard",
+            "level": "Standard Clean",
+            "price": "$60–$100",
+            "duration": "1–1.5 hrs",
+            "shortDescription": "Engine bay degreasing and wipe-down for standard vehicles.",
+            "features": [
+              "Engine Bay Pre-Rinse",
+              "Degreaser Application",
+              "Pressure Rinse",
+              "Engine Bay Wipe-Down & Dry",
+              "Plastic & Rubber Dressing",
+              "Visual Inspection"
+            ]
+          },
+          {
+            "id": "engine-heavy",
+            "level": "Heavy Duty Clean",
+            "price": "$100–$150",
+            "duration": "1.5–2 hrs",
+            "shortDescription": "Deep engine bay clean for heavily soiled engines — SUVs, trucks and vans.",
+            "features": [
+              "Everything in Standard Clean, plus",
+              "Heavy-Duty Degreaser Treatment",
+              "Steam Cleaning (if required)",
+              "Cable & Hose Detailing",
+              "Corrosion Treatment on Contacts",
+              "Final Protective Coating"
+            ]
+          }
         ]
       }
     ]

@@ -17,12 +17,15 @@ const TIME_SLOTS = [
 ];
 
 const ALL_PACKAGES = vehiclePackages.flatMap((v) =>
-  v.packages.map((pkg) => ({
-    ...pkg,
-    vehicleName: v.name,
-    vehicleId: v.id,
-    label: `${v.name} — ${pkg.level}`,
-  }))
+  (v.serviceTypes || []).flatMap((st) =>
+    st.packages.map((pkg) => ({
+      ...pkg,
+      vehicleName: v.name,
+      vehicleId: v.id,
+      serviceTypeLabel: st.label,
+      label: `${v.name} — ${st.label} — ${pkg.level}`,
+    }))
+  )
 );
 
 const getToday = () => new Date().toISOString().split("T")[0];
@@ -35,6 +38,7 @@ const BookingModal = () => {
 
   const preselectedPkg = bookingData?.package || null;
   const preselectedVehicle = bookingData?.vehicle || null;
+  const preselectedServiceType = bookingData?.serviceType || null;
 
   const getInitialPackageId = () => {
     if (preselectedPkg) return preselectedPkg.id;
@@ -152,7 +156,7 @@ const BookingModal = () => {
             <h2 className="bmodal__title">Book an Appointment</h2>
             {preselectedPkg && (
               <span className="bmodal__subtitle">
-                {preselectedVehicle?.name} — {preselectedPkg.level} · {preselectedPkg.price}
+                {preselectedVehicle?.name}{preselectedServiceType ? ` — ${preselectedServiceType.label}` : ""} — {preselectedPkg.level}{preselectedPkg.price ? ` · ${preselectedPkg.price}` : ""}
               </span>
             )}
           </div>
@@ -183,10 +187,14 @@ const BookingModal = () => {
               {preselectedPkg && (
                 <div className="bmodal__preselect">
                   <div className="bmodal__preselect-info">
-                    <span className="bmodal__preselect-vehicle">{preselectedVehicle?.name}</span>
+                    <span className="bmodal__preselect-vehicle">{preselectedVehicle?.name}{preselectedServiceType ? ` — ${preselectedServiceType.label}` : ""}</span>
                     <span className="bmodal__preselect-pkg">{preselectedPkg.level}</span>
                   </div>
-                  <span className="bmodal__preselect-price">{preselectedPkg.price}</span>
+                  {preselectedPkg.quoteOnly ? (
+                    <span className="bmodal__preselect-price" style={{ fontSize: "0.8rem" }}>Quote upon review</span>
+                  ) : (
+                    <span className="bmodal__preselect-price">{preselectedPkg.price}</span>
+                  )}
                 </div>
               )}
 
@@ -270,8 +278,12 @@ const BookingModal = () => {
                     const pkg = ALL_PACKAGES.find((p) => p.id === formData.selectedPackage);
                     return pkg ? (
                       <div className="bmodal__pkg-preview">
-                        <span>{pkg.vehicleName} — {pkg.level}</span>
-                        <span className="bmodal__pkg-preview-price">{pkg.price}</span>
+                        <span>{pkg.vehicleName} — {pkg.serviceTypeLabel} — {pkg.level}</span>
+                        {pkg.quoteOnly ? (
+                          <span className="bmodal__pkg-preview-price" style={{ fontSize: "0.8rem" }}>Quote upon review</span>
+                        ) : (
+                          <span className="bmodal__pkg-preview-price">{pkg.price}</span>
+                        )}
                         {pkg.duration && <span className="bmodal__pkg-preview-dur">{pkg.duration}</span>}
                       </div>
                     ) : null;

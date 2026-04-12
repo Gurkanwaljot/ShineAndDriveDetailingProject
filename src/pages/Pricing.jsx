@@ -37,7 +37,7 @@ export default function Pricing() {
         {currentVehicle && (
           <VehiclePackageList
             vehicle={currentVehicle}
-            onSelect={(pkg) => openBooking({ package: pkg, vehicle: currentVehicle })}
+            onSelect={(pkg, serviceType) => openBooking({ package: pkg, vehicle: currentVehicle, serviceType })}
           />
         )}
       </div>
