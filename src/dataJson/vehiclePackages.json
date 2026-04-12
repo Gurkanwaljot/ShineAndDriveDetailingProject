@@ -171,7 +171,7 @@
       {
         "id": "work-vans-level1",
         "level": "Level 1",
-        "price": "$200",
+        "quoteOnly": true,
         "duration": "2.5–3.5 hrs",
         "shortDescription": "Full exterior wash and interior clean for work vans.",
         "features": [
@@ -188,7 +188,7 @@
       {
         "id": "work-vans-level2",
         "level": "Level 2",
-        "price": "$240",
+        "quoteOnly": true,
         "duration": "3.5–5 hrs",
         "shortDescription": "Deep clean with steam and pet hair removal for work vans.",
         "features": [
@@ -204,7 +204,7 @@
       {
         "id": "work-vans-level3",
         "level": "Level 3",
-        "price": "$280",
+        "quoteOnly": true,
         "duration": "5–7 hrs",
         "shortDescription": "Complete restoration including deodorizer and trim for work vans.",
         "features": [

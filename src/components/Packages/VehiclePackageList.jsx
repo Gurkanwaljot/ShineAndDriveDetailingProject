@@ -20,7 +20,18 @@ const VehiclePackageItem = ({ pkg, onSelect }) => {
           <p className="package-item__short-desc">{pkg.shortDescription}</p>
         </div>
         <div className="package-item__right">
-          <span className="package-item__price">{pkg.price}</span>
+          {pkg.quoteOnly ? (
+            <div className="package-item__quote-notice">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              Quote upon review
+            </div>
+          ) : (
+            <span className="package-item__price">{pkg.price}</span>
+          )}
           <button className="package-item__book-btn" onClick={() => onSelect(pkg)}>
             Select
           </button>
@@ -65,8 +76,20 @@ const VehiclePackageItem = ({ pkg, onSelect }) => {
 };
 
 const VehiclePackageList = ({ vehicle, onSelect }) => {
+  const hasQuoteOnly = vehicle.packages.some((p) => p.quoteOnly);
+
   return (
     <div className="package-list">
+      {hasQuoteOnly && (
+        <div className="package-list__quote-banner">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+          Pricing for work vans varies based on vehicle condition. A custom quote will be provided after reviewing your van.
+        </div>
+      )}
       <div className="package-list__items">
         {vehicle.packages.map((pkg) => (
           <VehiclePackageItem key={pkg.id} pkg={pkg} onSelect={onSelect} />
