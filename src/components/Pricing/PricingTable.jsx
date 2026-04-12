@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import packages from '../../dataJson/packages.json';
-import Imgbasic from '../../../public/assets/img/Package/Basic Image.png';
-import Imgessential from '../../../public/assets/img/Package/Essential Package.png';
-import Imgpremium from '../../../public/assets/img/Package/Premium Package.png';
+const Imgbasic = '/assets/img/Package/Basic Image.png';
+const Imgessential = '/assets/img/Package/Essential Package.png';
+const Imgpremium = '/assets/img/Package/Premium Package.png';
 
 const PricingTable = ({ type }) => {
   const [flippedCard, setFlippedCard] = useState(null);
