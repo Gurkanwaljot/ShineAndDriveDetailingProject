@@ -21,6 +21,8 @@ import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import SingleService from "./pages/SingleService";
 import Booking from "./pages/Booking";
+import { BookingProvider } from "./context/BookingContext";
+import BookingModal from "./components/BookingModal/BookingModal";
 
 export default function App() {
   useEffect(() => {
@@ -28,30 +30,33 @@ export default function App() {
     AOS.refresh();
   }, []);
   return (
-    <Routes>
-      <Route path="/" element={<Main />}>
-        <Route index element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/service" element={<Service />}></Route>
-        <Route path="/service-two" element={<ServicesTwo />}></Route>
-        <Route
-          path="/service-single/:serviceId"
-          element={<SingleService />}
-        ></Route>
-        {/* <Route path="/blog" element={<Blog />}></Route> */}
-        {/* <Route path="/blog-single/:blogId" element={<SingleBlog />} /> */}
-        {/* <Route path="/team" element={<Team />} /> */}
-        {/* <Route path="/team-member/:teamId" element={<TeamMemberDetails />} /> */}
-        <Route path="/testimonial" element={<Testimonials />} />
-        <Route path="/appointment" element={<Appointment />} />
-        <Route path="/pricing" element={<Pricing />} />
-        {/* <Route path="/faq" element={<Faq />}  />  */}
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/comming-soon" element={<CommingSoon />} />
-        <Route path="/booking" element={<Booking />} />
-      </Route>
-      <Route path="/*" element={<ErrorPages />}></Route>
-    </Routes>
+    <BookingProvider>
+      <Routes>
+        <Route path="/" element={<Main />}>
+          <Route index element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/service" element={<Service />}></Route>
+          <Route path="/service-two" element={<ServicesTwo />}></Route>
+          <Route
+            path="/service-single/:serviceId"
+            element={<SingleService />}
+          ></Route>
+          {/* <Route path="/blog" element={<Blog />}></Route> */}
+          {/* <Route path="/blog-single/:blogId" element={<SingleBlog />} /> */}
+          {/* <Route path="/team" element={<Team />} /> */}
+          {/* <Route path="/team-member/:teamId" element={<TeamMemberDetails />} /> */}
+          <Route path="/testimonial" element={<Testimonials />} />
+          <Route path="/appointment" element={<Appointment />} />
+          <Route path="/pricing" element={<Pricing />} />
+          {/* <Route path="/faq" element={<Faq />}  />  */}
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/comming-soon" element={<CommingSoon />} />
+          <Route path="/booking" element={<Booking />} />
+        </Route>
+        <Route path="/*" element={<ErrorPages />}></Route>
+      </Routes>
+      <BookingModal />
+    </BookingProvider>
   );
 }

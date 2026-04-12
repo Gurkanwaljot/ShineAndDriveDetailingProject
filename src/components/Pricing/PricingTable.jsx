@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import packages from '../../dataJson/packages.json';
+import { useBooking } from '../../context/BookingContext';
 const Imgbasic = '/assets/img/Package/Basic Image.png';
 const Imgessential = '/assets/img/Package/Essential Package.png';
 const Imgpremium = '/assets/img/Package/Premium Package.png';
 
 const PricingTable = ({ type }) => {
+  const { openBooking } = useBooking();
   const [flippedCard, setFlippedCard] = useState(null);
 
   const handleCardFlip = (id) => {
@@ -31,24 +33,24 @@ const PricingTable = ({ type }) => {
 
   const cardData = {
     Cars: [
-      { id: "cars-basic", title: "Basic", price: "$150", data: packages.basic, img: Imgbasic },
-      { id: "cars-essential", title: "Essential", price: "$190", data: packages.essential, img: Imgessential },
-      { id: "cars-premium", title: "Premium", price: "$230", data: packages.premium, img: Imgpremium }
+      { id: "cars-basic", title: "Level 1", price: "$150", data: packages.basic, img: Imgbasic },
+      { id: "cars-essential", title: "Level 2", price: "$190", data: packages.essential, img: Imgessential },
+      { id: "cars-premium", title: "Level 3", price: "$230", data: packages.premium, img: Imgpremium }
     ],
     SUVs: [
-      { id: "suvs-basic", title: "Basic", price: "$170", data: packages.basic, img: Imgbasic },
-      { id: "suvs-essential", title: "Essential", price: "$210", data: packages.basic, img: Imgessential },
-      { id: "suvs-premium", title: "Premium", price: "$260", data: packages.basic, img: Imgpremium }
+      { id: "suvs-basic", title: "Level 1", price: "$170", data: packages.basic, img: Imgbasic },
+      { id: "suvs-essential", title: "Level 2", price: "$210", data: packages.basic, img: Imgessential },
+      { id: "suvs-premium", title: "Level 3", price: "$260", data: packages.basic, img: Imgpremium }
     ],
     Trucks: [
-      { id: "trucks-basic", title: "Basic", price: "$200", data: packages.basic, img: Imgbasic },
-      { id: "trucks-essential", title: "Essential", price: "$240", data: packages.basic, img: Imgessential },
-      { id: "trucks-premium", title: "Premium", price: "$280", data: packages.basic, img: Imgpremium }
+      { id: "trucks-basic", title: "Level 1", price: "$200", data: packages.basic, img: Imgbasic },
+      { id: "trucks-essential", title: "Level 2", price: "$240", data: packages.basic, img: Imgessential },
+      { id: "trucks-premium", title: "Level 3", price: "$280", data: packages.basic, img: Imgpremium }
     ],
     WorkVans: [
-      { id: "workvans-basic", title: "Basic", price: "$200", data: packages.basic, img: Imgbasic },
-      { id: "workvans-essential", title: "Essential", price: "$240", data: packages.basic, img: Imgessential },
-      { id: "workvans-premium", title: "Premium", price: "$280", data: packages.basic, img: Imgpremium }
+      { id: "workvans-basic", title: "Level 1", price: "$200", data: packages.basic, img: Imgbasic },
+      { id: "workvans-essential", title: "Level 2", price: "$240", data: packages.basic, img: Imgessential },
+      { id: "workvans-premium", title: "Level 3", price: "$280", data: packages.basic, img: Imgpremium }
     ]
   };
 
@@ -89,13 +91,12 @@ const PricingTable = ({ type }) => {
                     </div>
                   ))}
                 </div>
-                <a
-                  href="https://form.jotform.com/251835755283263"
-                  target="_blank"
+                <button
+                  onClick={(e) => { e.stopPropagation(); openBooking({ package: { level: card.title, price: card.price, id: card.id } }); }}
                   className="btn btn-warning rounded-pill p-3 px-5 text-light mx-auto"
                 >
                   Book now
-                </a>
+                </button>
               </div>
 
               {/* Back */}
@@ -112,13 +113,12 @@ const PricingTable = ({ type }) => {
                 }}
               >
                 <img src={card.img} alt="cover" className="cover" />
-                <a
-                  href="https://form.jotform.com/251835755283263"
-                  target="_blank"
+                <button
+                  onClick={(e) => { e.stopPropagation(); openBooking({ package: { level: card.title, price: card.price, id: card.id } }); }}
                   className="btn-package-normal btn-back"
                 >
                   Book now
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@ const PricingTable = ({ type }) => {
                 <h1 className="text-light display-3 fw-bold">Got a project?</h1>
               </div>
               <div className="col-lg-4 p-4 d-flex align-items-center">
-                <a className="common-btn" href="https://form.jotform.com/251835755283263" target="_main">Book an appointment</a>
+                <button className="common-btn" onClick={() => openBooking(null)}>Book an appointment</button>
               </div>
             </div>
           </div>

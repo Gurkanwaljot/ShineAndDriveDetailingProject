@@ -1,22 +1,15 @@
 import React, { useState } from "react";
 import CommonPageHero from "../components/CommonPageHero/CommonPageHero";
 import SectionHeading from "../components/SectionHeading/SectionHeading";
-import CategoryList from "../components/Packages/CategoryList";
-import PackageList from "../components/Packages/PackageList";
-import categoriesData from "../dataJson/categoriesData.json";
+import VehiclePackageList from "../components/Packages/VehiclePackageList";
+import vehiclePackages from "../dataJson/vehiclePackages.json";
+import { useBooking } from "../context/BookingContext";
 
 export default function Pricing() {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [activeVehicle, setActiveVehicle] = useState(vehiclePackages[0].id);
+  const { openBooking } = useBooking();
 
-  const handleSelectCategory = (category) => {
-    setSelectedCategory(category);
-    if (category) {
-      setTimeout(() => {
-        const el = document.getElementById("packages-panel");
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 50);
-    }
-  };
+  const currentVehicle = vehiclePackages.find((v) => v.id === activeVehicle);
 
   return (
     <>
@@ -24,25 +17,29 @@ export default function Pricing() {
       <div className="ak-height-75 ak-height-lg-50"></div>
 
       <div className="container">
-        <SectionHeading title={"Our Services & Packages"} />
+        <SectionHeading title={"Our Packages"} />
         <div className="ak-height-40 ak-height-lg-30"></div>
 
-        <div className="packages-layout">
-          <div className="packages-layout__categories">
-            <p className="packages-layout__label">Select a service category</p>
-            <CategoryList
-              categories={categoriesData}
-              selectedCategory={selectedCategory}
-              onSelectCategory={handleSelectCategory}
-            />
-          </div>
-
-          {selectedCategory && (
-            <div className="packages-layout__panel" id="packages-panel">
-              <PackageList category={selectedCategory} />
-            </div>
-          )}
+        <div className="vehicle-tabs">
+          {vehiclePackages.map((v) => (
+            <button
+              key={v.id}
+              className={`vehicle-tab ${activeVehicle === v.id ? "vehicle-tab--active" : ""}`}
+              onClick={() => setActiveVehicle(v.id)}
+            >
+              {v.name}
+            </button>
+          ))}
         </div>
+
+        <div className="ak-height-30 ak-height-lg-20"></div>
+
+        {currentVehicle && (
+          <VehiclePackageList
+            vehicle={currentVehicle}
+            onSelect={(pkg) => openBooking({ package: pkg, vehicle: currentVehicle })}
+          />
+        )}
       </div>
 
       <div className="ak-height-100 ak-height-lg-60"></div>
@@ -54,7 +51,9 @@ export default function Pricing() {
               <h1 className="text-light display-3 fw-bold">Ready to book?</h1>
             </div>
             <div className="col-lg-4 p-4 d-flex align-items-center">
-              <a className="common-btn" href="/booking">Book an appointment</a>
+              <button className="common-btn" onClick={() => openBooking(null)}>
+                Book an appointment
+              </button>
             </div>
           </div>
         </div>
