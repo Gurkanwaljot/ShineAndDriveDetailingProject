@@ -44,6 +44,11 @@ const PricingTable = ({ type }) => {
       { id: "trucks-basic", title: "Basic", price: "$200", data: packages.basic, img: Imgbasic },
       { id: "trucks-essential", title: "Essential", price: "$240", data: packages.basic, img: Imgessential },
       { id: "trucks-premium", title: "Premium", price: "$280", data: packages.basic, img: Imgpremium }
+    ],
+    WorkVans: [
+      { id: "workvans-basic", title: "Basic", price: "$200", data: packages.basic, img: Imgbasic },
+      { id: "workvans-essential", title: "Essential", price: "$240", data: packages.basic, img: Imgessential },
+      { id: "workvans-premium", title: "Premium", price: "$280", data: packages.basic, img: Imgpremium }
     ]
   };
 
@@ -149,6 +154,9 @@ const PricingTable = ({ type }) => {
             <li className="nav-item" role="presentation">
               <button className="nav-link" id="trucks-tab" data-bs-toggle="tab" data-bs-target="#trucks" type="button" role="tab" aria-selected="false">Trucks</button>
             </li>
+              <li className="nav-item" role="presentation">
+              <button className="nav-link" id="workvans-tab" data-bs-toggle="tab" data-bs-target="#workvans" type="button" role="tab" aria-selected="false">Work Vans</button>
+            </li>
           </ul>
 
           {/* Tab Content */}
@@ -169,6 +177,7 @@ const PricingTable = ({ type }) => {
               {[
                 ["Engine cleaning", "$50-80"],
                 ["Headlight restoration", "$50"],
+                ["Car Seats", "$30/seat"],
                 ["Advanced paint correction", "$200-300"],
                 ["Polishing", "$120-220"],
                 ["Plastic trim layer of protection", "$20"],

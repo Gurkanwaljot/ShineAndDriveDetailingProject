@@ -2,7 +2,6 @@ import React from 'react'
 import SectionHeading from '../SectionHeading/SectionHeading';
 import packages from '../../dataJson/regularpackages.json'
 export default function Regularpackages() {
-
   return (
     <div>
         <div className="container mt-5">
@@ -23,7 +22,9 @@ export default function Regularpackages() {
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="contactT-tab" data-bs-toggle="tab" data-bs-target="#contactT-tab-pane" type="button" role="tab" aria-controls="contactT-tab-pane" aria-selected="false">Trucks</button>
                 </li>
-                
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contactT-tab" data-bs-toggle="tab" data-bs-target="#contactT-tab-pane" type="button" role="tab" aria-controls="contactT-tab-pane" aria-selected="false">Trucks</button>
+                </li>
               </ul>
                   <div className="price-table-container">
               <div class="tab-content" id="myTabContent">

@@ -1,11 +1,14 @@
-import React, { useState, useRef } from "react";
-import emailjs from "emailjs-com";
+import React, { useState, useRef, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
-
 const ContactForm = () => {
   const formRef = useRef();
   const recaptchaRef = useRef();
-
+  useEffect(() => {
+    emailjs.init({
+      publicKey: "Tv9WY2n188C7UGKjU",
+    });
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,8 +69,8 @@ const ContactForm = () => {
     if (validate()) {
       emailjs
         .sendForm(
-          "", 
-          "", 
+          "service_qnuu0jk", 
+          "template_iky7i6d", 
           formRef.current,
           ""   
         )
@@ -160,7 +163,7 @@ const ContactForm = () => {
             <div className="my-3">
               <ReCAPTCHA
                 ref={recaptchaRef}
-                sitekey="" 
+                sitekey="6LfZ2YsrAAAAAIujt2mavUC8LmNRlt2dSt6v8AH2" 
                 onChange={(token) => setCaptchaToken(token)}
               />
               {errors.captcha && <p className="error">{errors.captcha}</p>}
