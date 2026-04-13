@@ -12,9 +12,11 @@ const specialtyServices = vehiclePackages.filter((v) => SPECIALTY_IDS.includes(v
 
 export default function Pricing() {
   const [activeVehicle, setActiveVehicle] = useState(mainVehicles[0].id);
+  const [activeSpecialty, setActiveSpecialty] = useState(specialtyServices[0].id);
   const { openBooking } = useBooking();
 
   const currentVehicle = mainVehicles.find((v) => v.id === activeVehicle);
+  const currentSpecialty = specialtyServices.find((v) => v.id === activeSpecialty);
 
   return (
     <>
@@ -55,17 +57,29 @@ export default function Pricing() {
         </div>
         <div className="ak-height-50 ak-height-lg-30"></div>
 
-        <div className="pricing-specialty-grid">
-          {specialtyServices.map((service) => (
-            <div key={service.id} className="pricing-specialty-section">
-              <h3 className="pricing-specialty-title">{service.name}</h3>
-              <VehiclePackageList
-                vehicle={service}
-                onSelect={(pkg, serviceType) => openBooking({ package: pkg, vehicle: service, serviceType })}
-              />
-            </div>
+        <SectionHeading title={"Specialty Services"} />
+        <div className="ak-height-40 ak-height-lg-30"></div>
+
+        <div className="vehicle-tabs">
+          {specialtyServices.map((v) => (
+            <button
+              key={v.id}
+              className={`vehicle-tab ${activeSpecialty === v.id ? "vehicle-tab--active" : ""}`}
+              onClick={() => setActiveSpecialty(v.id)}
+            >
+              {v.name}
+            </button>
           ))}
         </div>
+
+        <div className="ak-height-30 ak-height-lg-20"></div>
+
+        {currentSpecialty && (
+          <VehiclePackageList
+            vehicle={currentSpecialty}
+            onSelect={(pkg, serviceType) => openBooking({ package: pkg, vehicle: currentSpecialty, serviceType })}
+          />
+        )}
       </div>
 
       <div className="ak-height-100 ak-height-lg-60"></div>
