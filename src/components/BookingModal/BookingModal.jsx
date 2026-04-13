@@ -3,7 +3,7 @@ import { useBooking } from "../../context/BookingContext";
 import vehiclePackages from "../../dataJson/vehiclePackages.json";
 
 const ADD_ONS = [
-  { id: "engine-cleaning", label: "Engine Cleaning", price: "$50–80" },
+  { id: "engine-cleaning", label: "Engine Cleaning", price: "$60–150" },
   { id: "headlight-restoration", label: "Headlight Restoration", price: "$50" },
   { id: "car-seats", label: "Car Seats", price: "$30/seat" },
   { id: "polishing", label: "Polishing", price: "$120–220" },
