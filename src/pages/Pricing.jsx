@@ -5,11 +5,16 @@ import VehiclePackageList from "../components/Packages/VehiclePackageList";
 import vehiclePackages from "../dataJson/vehiclePackages.json";
 import { useBooking } from "../context/BookingContext";
 
+const SPECIALTY_IDS = ["paint-correction", "engine-cleaning"];
+
+const mainVehicles = vehiclePackages.filter((v) => !SPECIALTY_IDS.includes(v.id));
+const specialtyServices = vehiclePackages.filter((v) => SPECIALTY_IDS.includes(v.id));
+
 export default function Pricing() {
-  const [activeVehicle, setActiveVehicle] = useState(vehiclePackages[0].id);
+  const [activeVehicle, setActiveVehicle] = useState(mainVehicles[0].id);
   const { openBooking } = useBooking();
 
-  const currentVehicle = vehiclePackages.find((v) => v.id === activeVehicle);
+  const currentVehicle = mainVehicles.find((v) => v.id === activeVehicle);
 
   return (
     <>
@@ -21,7 +26,7 @@ export default function Pricing() {
         <div className="ak-height-40 ak-height-lg-30"></div>
 
         <div className="vehicle-tabs">
-          {vehiclePackages.map((v) => (
+          {mainVehicles.map((v) => (
             <button
               key={v.id}
               className={`vehicle-tab ${activeVehicle === v.id ? "vehicle-tab--active" : ""}`}
@@ -40,6 +45,27 @@ export default function Pricing() {
             onSelect={(pkg, serviceType) => openBooking({ package: pkg, vehicle: currentVehicle, serviceType })}
           />
         )}
+      </div>
+
+      <div className="ak-height-100 ak-height-lg-60"></div>
+
+      <div className="container">
+        <div className="pricing-specialty-divider">
+          <span>Additional Services</span>
+        </div>
+        <div className="ak-height-50 ak-height-lg-30"></div>
+
+        <div className="pricing-specialty-grid">
+          {specialtyServices.map((service) => (
+            <div key={service.id} className="pricing-specialty-section">
+              <h3 className="pricing-specialty-title">{service.name}</h3>
+              <VehiclePackageList
+                vehicle={service}
+                onSelect={(pkg, serviceType) => openBooking({ package: pkg, vehicle: service, serviceType })}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="ak-height-100 ak-height-lg-60"></div>
