@@ -609,12 +609,12 @@
     "name": "Paint Correction",
     "serviceTypes": [
       {
-        "id": "paint-correction-stages",
-        "label": "By Vehicle",
+        "id": "paint-car",
+        "label": "Car",
         "packages": [
           {
             "id": "paint-car-1stage",
-            "level": "Car — 1 Stage",
+            "level": "1 Stage",
             "price": "$350",
             "duration": "4–6 hrs",
             "shortDescription": "Single-stage machine polish to remove light swirls and scratches from cars.",
@@ -629,7 +629,7 @@
           },
           {
             "id": "paint-car-2stage",
-            "level": "Car — 2 Stage",
+            "level": "2 Stage",
             "price": "$550",
             "duration": "7–9 hrs",
             "shortDescription": "Two-stage compound and polish for moderate to heavy paint defects on cars.",
@@ -641,10 +641,16 @@
               "Gloss Enhancement Coating",
               "Paint Protection Wax"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "id": "paint-suv",
+        "label": "SUV",
+        "packages": [
           {
             "id": "paint-suv-1stage",
-            "level": "SUV — 1 Stage",
+            "level": "1 Stage",
             "price": "$450",
             "duration": "5–7 hrs",
             "shortDescription": "Single-stage machine polish for light swirl and scratch removal on SUVs.",
@@ -659,7 +665,7 @@
           },
           {
             "id": "paint-suv-2stage",
-            "level": "SUV — 2 Stage",
+            "level": "2 Stage",
             "price": "$650",
             "duration": "8–10 hrs",
             "shortDescription": "Two-stage correction for moderate to heavy paint defects on SUVs.",
@@ -671,10 +677,16 @@
               "Gloss Enhancement Coating",
               "Paint Protection Wax"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "id": "paint-truck",
+        "label": "Truck",
+        "packages": [
           {
             "id": "paint-truck-1stage",
-            "level": "Truck — 1 Stage",
+            "level": "1 Stage",
             "price": "$550",
             "duration": "5–7 hrs",
             "shortDescription": "Single-stage machine polish for light defect removal on trucks.",
@@ -689,7 +701,7 @@
           },
           {
             "id": "paint-truck-2stage",
-            "level": "Truck — 2 Stage",
+            "level": "2 Stage",
             "price": "$750",
             "duration": "8–12 hrs",
             "shortDescription": "Two-stage correction for moderate to heavy paint defects on trucks.",
